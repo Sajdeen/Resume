@@ -1,0 +1,62 @@
+*{
+    margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: flex;
+}
+aside{
+    background-color:rgb(9, 54, 97);
+    width:40vh;
+    height:100vh;
+}
+.profil{
+    margin-bottom: 20px;
+text-align: center;
+}
+img{
+    margin:2px;
+    padding: 15px;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.contact-educ{
+
+}
+h2{
+    font-size:20px;
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: underline;
+    animation: alternate;
+    margin: 2px;
+    padding:2px;
+
+}
+section{
+    padding: 20px;
+    flex: 1;
+    background-color: aquamarine;
+    width: 100px;
+    border-right: 2px solid black;
+}
+h1{
+    color:aliceblue;
+    font-size: 40px;
+    font-weight: bold;
+}
+.p1{
+    font-size:35px;
+    color:gray;
+}
+
+.p2{
+    font-size:20px;
+    color:rgb(239, 233, 233);
+}

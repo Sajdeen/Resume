@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .text{
+        text-align: center;
+        justify-content: center;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        justify-items: center;
+        background-image:url("text.jpeg");
+        background-size: contain;
+        margin: 0;
+        -webkit-background-clip: text;
+        -webkit-animation: alternate;
+        -webkit-text-fill-color:transparent; 
+        transition: font-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+        animation: scaleUp 2s infinite alternate;
+    }
+    body{
+        background: url(https://t3.ftcdn.net/jpg/04/12/82/16/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg);
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+    }
+    @media (min-width: 1024px) {
+        .text {
+            font-size: 60px; /* Increase the font size for larger screens */
+        }
+    }
+    @keyframes scaleUp {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.2);
+        }
+    }
+    </style>
+
+    </style>
+</head>
+<body>
+   <div class="text">WELCOME TO MY RESUME WEBSITE</div> 
+<button>Click</button>
+</body>
+</html>
