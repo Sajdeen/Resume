@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
     .text{
         text-align: center;
         justify-content: center;
@@ -14,9 +15,9 @@
         background-image:url("text.jpeg");
         background-size: contain;
         margin: 0;
+        user-select: none;
         -webkit-background-clip: text;
-        -webkit-animation: alternate;
-        -webkit-text-fill-color:transparent; 
+         -webkit-text-fill-color:transparent; */
         transition: font-size 0.5s ease-in-out, transform 0.5s ease-in-out;
         animation: scaleUp 2s infinite alternate;
     }
@@ -50,6 +51,34 @@
 </head>
 <body>
    <div class="text">WELCOME TO MY RESUME WEBSITE</div> 
-<button>Click</button>
+<button class="click">Click  to see my Resume</button>
+<script>
+    document.querySelector('.click').addEventListener('click', function() {
+           window.location.href = 'index.html'; 
+       });
+       const button = document.querySelector('.click');
+       button.style.cssText=
+       `font-size: 25px;
+    color: white;
+    background-color: #22a6b3;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    justify-content:center;
+    justify-items:center;
+    align-items:center;
+    margin-top:30%;
+    position:absolute;
+
+`;
+     button.addEventListener('mouseover', function(){
+        button.style.backgroundColor = '#74b9ff';
+
+     });
+       button.addEventListener('mouseout', function() {
+           button.style.backgroundColor = '#686de0';
+       });
+</script>
 </body>
-</html>
+</html>                                             
